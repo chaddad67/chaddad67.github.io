@@ -1,9 +1,19 @@
 body {
+  margin: 0px; 
   padding-top: 40px;
   padding-bottom: 40px;
-  background-color: #004643;
+  background-color: #90b4ce;
+  background-image: url("/thumbnails/catmar.jpg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  resize: both;
   display: flex;
   justify-content: center;
+  font-family: 'Merriweather', serif;
+  font-family: 'Open Sans', sans-serif;
+  backdrop-filter: blur(4px);
+  
 }
 
 .items {
@@ -12,6 +22,7 @@ body {
   gap: 30px;
   max-width: 640px;
   flex-grow: 1;
+  
 }
 
 .banner-image {
@@ -42,23 +53,70 @@ body {
 .social-icons {
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
 .social-icons a {
   color: #fffffe;
   text-decoration: none;
+  background-color: #90b4ce;
+  display: flex;
+  align-items: center;
+  padding: 5px 15px;
+  border-radius: 50px;
+  display: flex;
+  text-align: center;
+  
+}
+
+.social-icons a:hover {
+  background-color: #3da9fc;
 }
 
 .link {
-  background-color: #f9bc60;
+  background-color: #094067;
   display: flex;
   align-items: center;
   padding: 5px;
+  border-radius: 500px;
+  box-shadow: var(--shadow-elevation-low);
+  transition: 0.3s;
 }
 
 .link a {
-  color: #001e1d;
+  color: white;
   text-decoration: none;
   text-align: center;
   flex-grow: 1;
+}
+
+.link:hover {
+  box-shadow: var(--shadow-elevation-medium);
+  background-color: #5f6c7b;
+}
+
+.glassy {
+  background-color: rgba(149, 123, 173, 0.75);
+}
+
+:root {
+  --shadow-color: 203deg 70% 38%;
+  --shadow-elevation-low:
+    0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.34),
+    0.4px 0.8px 1px -1.2px hsl(var(--shadow-color) / 0.34),
+    1px 2px 2.5px -2.5px hsl(var(--shadow-color) / 0.34);
+  --shadow-elevation-medium:
+    0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.36),
+    0.8px 1.6px 2px -0.8px hsl(var(--shadow-color) / 0.36),
+    2.1px 4.1px 5.2px -1.7px hsl(var(--shadow-color) / 0.36),
+    5px 10px 12.6px -2.5px hsl(var(--shadow-color) / 0.36);
+  --shadow-elevation-high:
+    0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.34),
+    1.5px 2.9px 3.7px -0.4px hsl(var(--shadow-color) / 0.34),
+    2.7px 5.4px 6.8px -0.7px hsl(var(--shadow-color) / 0.34),
+    4.5px 8.9px 11.2px -1.1px hsl(var(--shadow-color) / 0.34),
+    7.1px 14.3px 18px -1.4px hsl(var(--shadow-color) / 0.34),
+    11.2px 22.3px 28.1px -1.8px hsl(var(--shadow-color) / 0.34),
+    17px 33.9px 42.7px -2.1px hsl(var(--shadow-color) / 0.34),
+    25px 50px 62.9px -2.5px hsl(var(--shadow-color) / 0.34);
 }
