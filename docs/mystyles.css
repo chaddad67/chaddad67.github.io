@@ -1,3 +1,4 @@
+
 body {
   margin: 0px; 
   padding-top: 40px;
@@ -5,7 +6,7 @@ body {
   background-color: #90b4ce;
   background-image: url("/thumbnails/catmar.jpg");
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   resize: both;
   display: flex;
@@ -13,7 +14,6 @@ body {
   font-family: 'Merriweather', serif;
   font-family: 'Open Sans', sans-serif;
   backdrop-filter: blur(4px);
-  
 }
 
 .items {
@@ -22,7 +22,6 @@ body {
   gap: 30px;
   max-width: 640px;
   flex-grow: 1;
-  
 }
 
 .banner-image {
@@ -37,6 +36,14 @@ body {
   height: 48px;
   border-radius: 48px;
   object-fit: cover;
+}
+
+.fa-camera {
+  width: 48px;
+  height: 48px;
+  border-radius: 40px;
+  object-fit: auto;
+  color: white;
 }
 
 .name {
@@ -93,10 +100,6 @@ body {
 .link:hover {
   box-shadow: var(--shadow-elevation-medium);
   background-color: #5f6c7b;
-}
-
-.glassy {
-  background-color: rgba(149, 123, 173, 0.75);
 }
 
 :root {
